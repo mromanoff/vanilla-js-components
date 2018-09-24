@@ -85,16 +85,16 @@ class Stopwatch extends Component {
         const {time, running} = props;
         console.warn(props);
         let template = `
-        <div id="stopwatch">
+        <div class="Stopwatch">
           ${this.formatTime(time)}
         </div>
-        <div class="stopwatch_content">
-          <button 
+        <div class="Button-container">
+          <button class="Button Button--primary"
             data-stopwatch="${ running ? 'stop' : 'start' }"
           > 
             ${ running ? 'Stop' : 'Start' } 
           </button>
-          <button data-stopwatch="reset">
+          <button class="Button" data-stopwatch="reset">
             Reset
           </button>
         </div>

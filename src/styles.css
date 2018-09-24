@@ -1,3 +1,112 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/**
+ * Layout
+ */
 body {
-    background: #b5b6c3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0;
+}
+
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-header {
+    width: 100%;
+    background: #17aef5;
+    height: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.App-main {
+    min-height: 200px;
+    padding: 0 1rem;
+}
+
+.App-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background: #114d78;
+    color: white;
+    padding: 0 1rem;
+}
+
+.footer-wrapper {
+    width: 100%;
+    background: whitesmoke;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.Stopwatch {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.Button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button {
+    text-transform: uppercase;
+    border-radius: 15px;
+    min-width: 10rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    min-height: 30px;
+}
+
+.Button:first-child {
+    margin-right: 0.25rem;
+}
+
+.Button:focus {
+    outline: 0;
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+.Button--primary {
+    background: #ff9526;
+    border: 1px solid #ff9526;
+    color: white;
+    transition: background-color 100ms ease-out 100ms;
+}
+
+.Button--primary:hover,
+.Button--primary:focus {
+    background-color: color(#ff9526 alpha(-30%));
+}
+
+.Button--primary:active,
+.Button--primary.is-pressed {
+    background-color: color(#ff9526 blackness(20%));
 }

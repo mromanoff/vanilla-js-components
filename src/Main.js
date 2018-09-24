@@ -26,7 +26,6 @@ class Main extends Component {
             Loading...
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere, nisl in pharetra tincidunt, leo lectus fringilla orci, vitae dignissim purus mi eu turpis. Pellentesque a laoreet velit, sit amet tincidunt urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. In lorem felis, sagittis nec pharetra nec, porta eu est. Mauris gravida, justo sit amet finibus eleifend, enim arcu feugiat mi, et rhoncus sem ligula scelerisque augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi aliquam nibh risus, vitae dictum lorem sollicitudin ac. Sed ac enim est. Praesent id dolor ligula. Praesent sollicitudin sed turpis sed rutrum. Curabitur eget varius tortor. Ut quis consectetur odio. Phasellus iaculis, metus ac volutpat auctor, dui nibh ornare quam, imperdiet aliquam tellus quam sit amet mi.</p>
-          <p>Praesent posuere, tortor sit amet varius consectetur, turpis metus lacinia enim, eu tincidunt ante tellus ac neque. Duis vulputate luctus viverra. Mauris velit purus, fermentum vitae ipsum vitae, ornare malesuada dolor. Etiam egestas rutrum pellentesque. Aliquam scelerisque hendrerit turpis vitae scelerisque. Aliquam sagittis eget lectus sit amet imperdiet. Etiam luctus porttitor elit dignissim tempor. Duis id vehicula est. Vestibulum ornare ante tempus, varius dolor quis, tristique ipsum. Etiam luctus vulputate velit, vitae ultrices lorem scelerisque in.</p>
         </main>
       `;
         return template;
