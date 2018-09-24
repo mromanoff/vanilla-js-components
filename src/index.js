@@ -1,33 +1,37 @@
-import _ from 'lodash';
-import printMe from './print.js';
-import {cube} from './math.js';
+import App from './App';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+
 import './styles.css';
 
-function component() {
-    var element = document.createElement('pre');
-    var btn = document.createElement('button');
+document.componentRegistry = {}; // keep a record of the components we've created, accessible throught the document
+document.nextId = 0;             // initial id
 
-    element.innerHTML = [
-        'Hello webpack!',
-        '5 cubed is equal to ' + cube(5)
-    ].join('\n\n');
 
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+let root = document.getElementById('root');
+let app = new App({element: root}); // Store the element to re-render on print.js changes
+app.render();
 
-    element.appendChild(btn);
+let headerElement = '[data-component="header"]';
+let header = new Header({element: headerElement, data: {title: 'JS Component POC'}});
+header.render();
 
-    return element;
-}
+let mainElement = '[data-component="main"]';
+let main = new Main({element: mainElement});
+main.render();
 
-let element = component(); // Store the element to re-render on print.js changes
-document.body.appendChild(element);
+let footerElement = '[data-component="footer"]';
+let footer = new Footer({element: footerElement});
+footer.render();
+
 
 if (module.hot) {
-    module.hot.accept('./print.js', function () {
-        console.log('Accepting the updated printMe module!');
-        document.body.removeChild(element);
-        element = component(); // Re-render the "component" to update the click handler
-        document.body.appendChild(element);
+    module.hot.accept('./App.js', function () {
+        console.log('Accepting the updated App module!');
+        document.body.removeChild(root);
+        app = App({element: root}); // Re-render the "app" to update the click handler
+        app.render();
+        //document.body.appendChild(app);
     })
 }

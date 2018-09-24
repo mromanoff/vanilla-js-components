@@ -16,8 +16,7 @@
   "author": "Michael Romanoff",
   "license": "ISC",
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "lodash": "^4.17.11"
+    "@babel/polyfill": "^7.0.0"
   },
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
