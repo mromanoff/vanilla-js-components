@@ -3,6 +3,8 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 
+import LoaderHOC from './LoaderHOC';
+
 import './styles.css';
 
 document.componentRegistry = {}; // keep a record of the components we've created, accessible throught the document
@@ -22,7 +24,7 @@ let main = new Main({element: mainElement});
 main.render();
 
 let footerElement = '[data-component="footer"]';
-let footer = new Footer({element: footerElement});
+let footer = LoaderHOC(new Footer({element: footerElement}));
 footer.render();
 
 
