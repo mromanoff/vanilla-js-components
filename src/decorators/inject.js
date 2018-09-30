@@ -1,9 +1,13 @@
 const mmyStore = {
-  a: 1, b: 2, title: 'MMY Store title',
+  a: 1,
+  b: 2,
+  title: "MMY Store title"
 };
 
 const inventoryStore = {
-  a: 10, b: 20, title: 'Inventory Store title',
+  a: 10,
+  b: 20,
+  title: "Inventory Store title"
 };
 
 export default function inject(name) {
@@ -11,10 +15,10 @@ export default function inject(name) {
     return (...args) => {
       let props;
       switch (name) {
-        case 'mmyStore':
+        case "mmyStore":
           props = [...args, mmyStore];
           break;
-        case 'inventoryStore':
+        case "inventoryStore":
           props = [...args, inventoryStore];
           break;
         default:

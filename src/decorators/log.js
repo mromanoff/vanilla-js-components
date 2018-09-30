@@ -1,7 +1,7 @@
 export default function log(target, name, descriptor) {
   const original = descriptor.value;
-  if (typeof original === 'function') {
-    descriptor.value = function (...args) {
+  if (typeof original === "function") {
+    descriptor.value = function(...args) {
       console.log(`Arguments: ${args}`);
       try {
         const result = original.apply(this, args);
@@ -11,7 +11,7 @@ export default function log(target, name, descriptor) {
         console.log(`Error: ${e}`);
         throw e;
       }
-    }
+    };
   }
   return descriptor;
 }
