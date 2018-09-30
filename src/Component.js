@@ -1,3 +1,6 @@
+//import store from './store';
+
+//@store('abc')
 class Component {
     constructor(props) {
         // ..and an (optional) custom class constructor. If one is
