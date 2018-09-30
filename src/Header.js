@@ -1,5 +1,5 @@
 import Component from './Component';
-import inject from './inject';
+import inject from './decorators/inject';
 
 @inject('inventoryStore')
 class Header extends Component {
@@ -11,9 +11,11 @@ class Header extends Component {
 
   template(props) { // the data is passed in as props here.
     const {title} = props;
+    debugger;
+
     let template = `
         <div class="nav">
-          ${title} ${this.store.title}
+          ${this.state.title} ${this.store.title}
         </div>
       `;
     return template;

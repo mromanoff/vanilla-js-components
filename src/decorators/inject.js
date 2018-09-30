@@ -6,7 +6,6 @@ const inventoryStore = {
   a: 10, b: 20, title: 'Inventory Store title',
 };
 
-
 export default function inject(name) {
   return function decorator(Class) {
     return (...args) => {
@@ -20,10 +19,9 @@ export default function inject(name) {
           break;
         default:
           props = [...args];
-        break;
+          break;
       }
       console.log(`Arguments for ${name}: args `, args);
-      //args.push(props);
       return new Class(...props);
     };
   };

@@ -1,9 +1,9 @@
 import Component from './Component';
-import inject from './inject';
+import inject from './decorators/inject';
 
 @inject('mmyStore')
 class Footer extends Component {
-  instanceProperty = 'bork';
+  instanceProperty = 'Footer';
 
   constructor(props, store) {
     super(props);
@@ -14,7 +14,7 @@ class Footer extends Component {
   template(props) { // the data is passed in as props here.
     let template = `
         <footer>
-            <p>footer content going here ${this.instanceProperty}</p>
+            <p>${this.instanceProperty} content going here </p>
             <p>store value: ${this.store.a}</p>
             <p>store value: ${this.store.b}</p> 
         </footer>

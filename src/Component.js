@@ -1,6 +1,3 @@
-//import store from './store';
-
-//@store('abc')
 class Component {
     constructor(props) {
         // ..and an (optional) custom class constructor. If one is
@@ -20,7 +17,7 @@ class Component {
     // Add a setState() method, just like other js frameworks.
     setState(props) {
         // Shallow merge new properties into state object
-        for (var key in props) {
+        for (let key in props) {
             if (props.hasOwnProperty(key)) {
                 this.state.data[key] = props[key];
             }
@@ -42,7 +39,7 @@ class Component {
 
     template(props) { // this is where our template markup will go.
         let template = `
-        <div>Hello, whats up</div>
+        <div></div>
       `;
         return template ? template : null;
     }
@@ -53,7 +50,6 @@ class Component {
      */
 
     render() {
-
         const {element, data} = this.state; // here we're grabbing the elem and data deconstructed from the state.
 
         // Make sure there's a template
@@ -79,7 +75,7 @@ class Component {
         if (_element.innerHTML === _template) return; // if they're the same, return
         _element.innerHTML = _template; // else update with new template
 
-        // Dispatch a render event -> https://developer.mozilla.org/en-US/documents/Web/API/CustomEvent
+        // Dispatch a render event
         if (typeof window.CustomEvent === 'function') {
             let event = new CustomEvent('render', {
                 bubbles: true
@@ -87,6 +83,7 @@ class Component {
             _element.dispatchEvent(event);
         }
 
+        // as a React JS  lifecycle method
         this.componentDidMount(_element);
 
         // Return the _elem for use elsewhere
