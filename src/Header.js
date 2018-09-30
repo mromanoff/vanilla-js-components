@@ -9,13 +9,11 @@ class Header extends Component {
     this.store = store;
   }
 
-  template(props) { // the data is passed in as props here.
-    const {title} = props;
-    debugger;
-
+  template() { // the data is passed in as props here.
+    const {title} = this.state.data;
     let template = `
         <div class="nav">
-          ${this.state.title} ${this.store.title}
+          ${title} ${this.store.title}
         </div>
       `;
     return template;
