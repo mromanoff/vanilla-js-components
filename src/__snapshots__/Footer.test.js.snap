@@ -36,7 +36,7 @@ Footer {
   "store": Object {
     "a": 1,
     "b": 2,
-    "title": "MMY Store title",
+    "title": "MMY Store Title",
   },
 }
 `;
