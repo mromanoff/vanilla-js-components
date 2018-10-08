@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+Footer {
+  "_id": 1,
+  "instanceProperty": "Footer",
+  "state": Object {
+    "element": <div
+      data-component="footer"
+    >
+      
+        
+      <footer>
+        
+            
+        <p>
+          Footer content going here 
+        </p>
+        
+            
+        <p>
+          store value: 1
+        </p>
+        
+            
+        <p>
+          store value: 2
+        </p>
+         
+        
+      </footer>
+      
+      
+    </div>,
+  },
+  "store": Object {
+    "a": 1,
+    "b": 2,
+    "title": "MMY Store title",
+  },
+}
+`;

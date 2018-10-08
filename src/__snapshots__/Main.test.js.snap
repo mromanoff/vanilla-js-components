@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main renders correctly 1`] = `
+Main {
+  "_id": 1,
+  "state": Object {
+    "element": <div
+      data-component="main"
+    >
+      
+        
+      <main>
+        
+          
+        <div
+          data-component="timer"
+        >
+          
+            Loading...
+          
+        </div>
+        
+          
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere, nisl in pharetra tincidunt, leo lectus fringilla orci, vitae dignissim purus mi eu turpis. Pellentesque a laoreet velit, sit amet tincidunt urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. In lorem felis, sagittis nec pharetra nec, porta eu est. Mauris gravida, justo sit amet finibus eleifend, enim arcu feugiat mi, et rhoncus sem ligula scelerisque augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi aliquam nibh risus, vitae dictum lorem sollicitudin ac. Sed ac enim est. Praesent id dolor ligula. Praesent sollicitudin sed turpis sed rutrum. Curabitur eget varius tortor. Ut quis consectetur odio. Phasellus iaculis, metus ac volutpat auctor, dui nibh ornare quam, imperdiet aliquam tellus quam sit amet mi.
+        </p>
+        
+        
+      </main>
+      
+      
+    </div>,
+  },
+}
+`;

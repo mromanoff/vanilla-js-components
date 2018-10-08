@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stopwatch renders correctly 1`] = `
+Stopwatch {
+  "_id": 1,
+  "clickHandler": [Function],
+  "formatTime": [Function],
+  "reset": [Function],
+  "start": [Function],
+  "state": Object {
+    "data": Object {
+      "running": false,
+      "time": 0,
+    },
+    "element": <div
+      data-component="timer"
+    >
+      
+        
+      <div
+        class="Stopwatch"
+      >
+        
+          0s
+        
+      </div>
+      
+        
+      <div
+        class="Button-container"
+      >
+        
+          
+        <button
+          class="Button Button--primary"
+          data-stopwatch="start"
+        >
+           
+            Start 
+          
+        </button>
+        
+          
+        <button
+          class="Button"
+          data-stopwatch="reset"
+        >
+          
+            Reset
+          
+        </button>
+        
+        
+      </div>
+      
+      
+    </div>,
+  },
+  "stop": [Function],
+  "timerInterval": null,
+}
+`;

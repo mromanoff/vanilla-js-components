@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+Header {
+  "_id": 1,
+  "state": Object {
+    "data": Object {
+      "title": "JS Component POC",
+    },
+    "element": <div
+      data-component="header"
+    >
+      
+        
+      <div
+        class="nav"
+      >
+        
+          JS Component POC Inventory Store title
+        
+      </div>
+      
+      
+    </div>,
+  },
+  "store": Object {
+    "a": 10,
+    "b": 20,
+    "title": "Inventory Store title",
+  },
+}
+`;
