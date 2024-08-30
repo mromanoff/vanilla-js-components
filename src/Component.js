@@ -1,6 +1,6 @@
 class Component {
   constructor(props) {
-    // ..and an (optional) custom class constructor. If one is
+    // ...and an (optional) custom class constructor. If one is
     // not supplied, a default constructor is used instead:
     // constructor() { }
     if (!props.element)
@@ -12,7 +12,7 @@ class Component {
     this.state = {
       // defining the initial state
       element: props.element, // the target dom elem we will be injecting the component into. ( i.e. #app for <div id="app"></div> )
-      data: props.data || null // the data we want to pass to our component or null, ( i.e an object with key/value pairs )
+      data: props.data || null // the data we want to pass to our component or null, ( i.e. an object with key/value pairs )
     };
   }
 
